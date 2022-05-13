@@ -537,14 +537,24 @@ a {
 .teams .dots {
     margin-top: 30px;
     text-align: center;
-    
+    transition: var(--main-transition);
 }
+
 .teams .dots .right{
     background-color: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     width: 15px;
     height: 15px;
+    transition: var(--main-transition);
+}
+.teams .dots:hover .right {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    width: 40px;
+    height: 15px;
+    margin-left: 5px;
 }
 .teams .dots .left {
     background-color: var(--main-color);
@@ -553,6 +563,14 @@ a {
     width: 40px;
     height: 15px;
     margin-left: 5px;
+    transition: var(--main-transition);
+}
+.teams .dots:hover .left {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
 /* End Teams */
 /* Start Contact */
